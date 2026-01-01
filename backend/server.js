@@ -42,7 +42,7 @@ const sendAutoReply = async (userEmail, userName) => {
     subject: "Thank You for Your Interest!",
     html: `
       <div style="font-family: Arial; max-width:600px; margin:auto; border:1px solid #ddd; border-radius:8px; overflow:hidden;">
-        <div style="background-color:#047bc5; color:white; padding:15px 20px; text-align:center;">
+        <div style="background-color:#fea611; color:white; padding:15px 20px; text-align:center;">
           <h1 style="margin:0; font-size:22px;">Thank You for Contacting Us!</h1>
         </div>
         <div style="padding:20px;">
@@ -69,7 +69,7 @@ const notifyAdmin = async (formData) => {
     subject: "New Lead - SAMARCANA SWASTHI",
     html: `
       <div style="font-family: Arial; max-width:600px; margin:auto; border:1px solid #ddd; border-radius:8px; overflow:hidden;">
-        <div style="background-color:#047bc5; color:white; padding:15px 20px; text-align:center;">
+        <div style="background-color:#fea611; color:white; padding:15px 20px; text-align:center;">
           <h1 style="margin:0;">New Inquiry Received</h1>
         </div>
         <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:14px; color:#333;">
