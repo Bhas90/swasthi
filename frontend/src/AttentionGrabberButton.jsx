@@ -4,7 +4,7 @@ const AttentionGrabberButton = () => {
   const [showButton, setShowButton] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
 
-  const message = encodeURIComponent("Hi, I'm interested in booking a site visit! Tidasa RISE");
+  const message = encodeURIComponent("Hi, I'm interested in booking a site visit! SAMARCANA SWASTHI");
 
   useEffect(() => {
     const timer = setTimeout(() => {

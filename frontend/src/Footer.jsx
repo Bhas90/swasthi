@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto text-center">
         {/* Main Content */}
         <p className="text-[10px] font-light mb-3">
-          ©2025 | Tridasa Rise (Project RERA No.: P02400009596) Promoted by Authorised Channel Partner
+          ©2025 | Samarcana Projects (Project RERA No.: P01100007471) Promoted by Authorised Channel Partner
 
         {/* Disclaimer */}
         <p className="text-[10px] text-gray-400 leading-relaxed mb-3">

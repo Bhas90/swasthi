@@ -175,13 +175,24 @@ const PopupForm = ({ show: externalShow, onClose: externalOnClose }) => {
             <PhoneInput
               country="in"
               value={formData.mobile}
+              disabled={hasSubmitted}
+              countryCodeEditable={false}
+              onlyCountries={["in"]}
               onChange={(value) =>
+                !hasSubmitted &&
                 setFormData((prev) => ({ ...prev, mobile: value }))
               }
-              inputProps={{ name: "mobile", required: true }}
-              containerClass="phone-container"
-              inputClass="phone-input"
+              containerClass="w-full"
+              inputClass={`!w-full !py-4 !pl-14 !border !border-gray-300 rounded ${
+                hasSubmitted ? "bg-gray-100 cursor-not-allowed" : ""
+              }`}
+              inputProps={{
+                name: "mobile",
+                required: true,
+                autoComplete: "tel",
+              }}
             />
+
             {errors.mobile && (
               <p className="text-red-500 text-sm">{errors.mobile}</p>
             )}
@@ -234,7 +245,7 @@ const ThankYouModal = ({ onClose }) => {
 
         <button
           onClick={onClose}
-          className="w-full py-2 bg-[#00b4e6] hover:bg-[#002954] text-white rounded transition"
+          className="w-full py-2 bg-[#fea611] hover:opacity-80 text-white rounded transition"
         >
           OK
         </button>

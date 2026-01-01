@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaPhoneAlt, FaBars, FaTimes } from "react-icons/fa";
-import mlogo from "./assets/logo.webp";
+import mlogo from "./assets/samarcana-logo.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -66,7 +66,7 @@ const Navbar = () => {
         <button onClick={() => scrollToSection("about")} className="px-4 py-2 border border-transparent border rounded hover:border-green-700 transition duration-300">About</button>
         <a
           href="callto:+918977516130"
-          className="blinking-button px-4 py-2 text-white rounded-full shadow-md hover:opacity-90 transition duration-300 bg-gradient-to-r from-[#fea611] to-[#0f355f]"
+          className="blinking-button px-4 py-2 text-white rounded-full shadow-md hover:opacity-50 transition duration-250 bg-[#fea611]"
         >
         Call +91-8977516130
       </a>
@@ -84,7 +84,7 @@ const Navbar = () => {
           <button onClick={() => scrollToSection("about")}>About</button>
           <a
           href="callto:+918977516130"
-          className="blinking-button px-4 py-2 text-white rounded-full shadow-md hover:opacity-90 transition duration-300 bg-gradient-to-r from-[#fea611] to-[#0f355f]"
+          className="blinking-button px-4 py-2 text-white rounded-full shadow-md hover:opacity-50 transition duration-300 bg-[#fea611]"
         >
             Call +91-8977516130
           </a>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const WhatsAppButton = () => {
     const [isBlinking, setIsBlinking] = useState(false);
-    const message = encodeURIComponent("Hi, I want to know more details about Vajra West City. Can you help me?");
+    const message = encodeURIComponent("Hi, I want to know more details about SAMARCANA SWASTHI. Can you help me?");
 
     useEffect(() => {
         const interval = setInterval(() => {

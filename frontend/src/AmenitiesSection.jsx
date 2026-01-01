@@ -19,18 +19,13 @@ const amenities = [
     id: "clubhouse",
     label: "CLUBHOUSE AMENITIES",
     items: [
-      "Banquet Hall", "Guest Rooms", "Business Centre", "Mini Theatre", "2 Badminton Court", "Squash Court", "Provision for Super Market", "Provision for Creche", "Gym", "Swimming Pool", "Terrace Party Deck", "Indoor Games", "Outdoor Deck", "Yoga / Meditation Space", "Pilates / Aerobics", "Provision for Salon", "Hobby Zone", "Provision for Pharmacy", "Provision for ATM"
+      "Banquet Hall", "Guest Rooms", "Business Centre", "Reception Lobby", "Dining Hall", "Senior Citizen Hall", "Multipurpose Hall", "Indoor Games", "Gym", "Swimming Pool", 
     ],
   },
   {
     id: "outdoor",
     label: "OUTDOOR AMENITIES",
-    items: ["Tennis Court", "Pickleball Court", "Cricket Net", "Basketball Court", "Skating Zone", "Senior Citizen Zone", "Space for Temple", "Kids Gardening", "Children Play Area", "Forest Walk", "Scented Garden", "Party Lawns", "Herbal Gardens", "Relaxation Gazebo", "Outdoor Fitness Space", "Work From Nature", "Sculpture", "Walking Track", "Grand Entrance"],
-  },
-  {
-    id: "tower",
-    label: "TOWER AMENITIES",
-    items: ["Children Activity Zone", "Yoga Space", "Multi-purpose Area", "Co-working Space", "Graffiti Wall", "Relaxation Lounge", "Kids Thrift Zone", "Ladies Zone", "Rock Climbing"],
+    items: ["Yoga/Meditation Lawn", "Seating Plaza", "Reflexology with Railing", "Stage with Feature Wall", "Shrub Plantation", "Kids Play Area", "Planter with Seating", "Cricket Practice Net", "Outdoor Gym", "Boundary Plantation", "Micro Forest", "Palm Planation", "Skating Rink", "Half Basketball Court", "Turret"],
   },
 ];
 
@@ -93,7 +88,7 @@ const AmenitiesSection = () => {
               key={id}
               className={`px-4 py-2 rounded-lg text-sm sm:text-base font-medium transition ${
                 selected === id
-                  ? "text-white bg-gradient-to-r from-[#002954] to-[#fea611]"
+                  ? "text-white bg-[#fea611]"
                   : "bg-yellow-100 text-yellow-700 hover:bg-yellow-200"
               }`}
               onClick={() => setSelected(id)}

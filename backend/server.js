@@ -37,7 +37,7 @@ const transporter = nodemailer.createTransport({
 // ✅ Auto-reply to user
 const sendAutoReply = async (userEmail, userName) => {
   const mailOptions = {
-    from: `"Tridasa Rise" <admin@aurealconsulting.com>`,
+    from: `"SAMARCANA SWASTHI" <admin@aurealconsulting.com>`,
     to: userEmail,
     subject: "Thank You for Your Interest!",
     html: `
@@ -47,13 +47,13 @@ const sendAutoReply = async (userEmail, userName) => {
         </div>
         <div style="padding:20px;">
           <h2 style="color:#047bc5;">Hello ${userName},</h2>
-          <p>Thank you for reaching out to <strong>Tridasa Rise</strong>!</p>
+          <p>Thank you for reaching out to <strong>SAMARCANA SWASTHI</strong>!</p>
           <p>We’ll get in touch with you shortly to assist you further.</p>
           <hr style="border:none; border-top:1px solid #ddd; margin:20px 0;" />
           <p>If you have any questions, call us at <a href="tel:+918977516130" style="color:#047bc5;">+91-8977516130</a>.</p>
         </div>
         <div style="background-color:#f0f0f0; padding:15px 20px; text-align:center; color:#666;">
-          <p style="margin:0; font-style:italic;">Warm regards,<br/>Team Tridasa Rise</p>
+          <p style="margin:0; font-style:italic;">Warm regards,<br/>Team Samarcana Projects</p>
         </div>
       </div>
     `,
@@ -64,9 +64,9 @@ const sendAutoReply = async (userEmail, userName) => {
 // ✅ Notify admin
 const notifyAdmin = async (formData) => {
   const mailOptions = {
-    from: `"Tridasa Rise" <admin@aurealconsulting.com>`,
+    from: `"SAMARCANA SWASTHI" <admin@aurealconsulting.com>`,
     to: "azmath@aurealconsulting.com",
-    subject: "New Lead - Tridasa Rise",
+    subject: "New Lead - SAMARCANA SWASTHI",
     html: `
       <div style="font-family: Arial; max-width:600px; margin:auto; border:1px solid #ddd; border-radius:8px; overflow:hidden;">
         <div style="background-color:#047bc5; color:white; padding:15px 20px; text-align:center;">
@@ -125,7 +125,7 @@ const pushToTeleCRM = async (lead) => {
     actions: [
       {
         type: "SYSTEM_NOTE",
-        text: "Lead Source: Tridasa Rise Website",
+        text: "Lead Source: Samarcana Website",
       },
     ],
   };

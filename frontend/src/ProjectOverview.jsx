@@ -12,32 +12,32 @@ const projectHighlights = [
   {
     icon: <MapPin className="w-8 h-8 text-[#fea611]" />,
     title: "LOCATION",
-    desc: "Nallagandla, Tellapur Rd",
+    desc: "Kardanur Village, Near ORR Exit 2 & 3, Kollur",
   },
   {
     icon: <Home className="w-8 h-8 text-[#fea611]" />,
     title: "SIZE RANGE",
-    desc: "1733-2751 Sq.Ft.",
+    desc: "1250-2000 Sq.Ft.",
   },
   {
     icon: <Ruler className="w-8 h-8 text-[#fea611]" />,
     title: "Total Area",
-    desc: "10.38 Acres",
+    desc: "2.38 Acres",
   },
   {
     icon: <Grid3x3 className="w-8 h-8 text-[#fea611]" />,
     title: "Towers & Floors",
-    desc: "7 Towers | 17 Floors",
+    desc: "3 Towers | 17 Floors",
   },
   {
     icon: <Users className="w-8 h-8 text-[#fea611]" />,
     title: "Low Density",
-    desc: "952 Units | 92 Units Per Acre",
+    desc: "323 Units ",
   },
   {
     icon: <Layers className="w-8 h-8 text-[#fea611]" />,
     title: "Clubhouse",
-    desc: "55,000 SQ.FT",
+    desc: "18,000 SQ.FT",
   },
 ];
 

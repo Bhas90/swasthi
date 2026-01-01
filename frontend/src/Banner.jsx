@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import logo from "./assets/rise_banner_1.png";
+import logo from "./assets/samarcana-1.png";
 
 const Banner = () => {
   const [hasSubmitted, setHasSubmitted] = useState(false);
@@ -10,7 +10,7 @@ const Banner = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    mobile: "",
+    mobile: "91",
     agreeTerms: false,
     ip: "",
   });
@@ -114,11 +114,12 @@ const Banner = () => {
             Schedule your{" "}
             <span style={{ color: "#fea611" }}>exclusive site visit</span> today at{" "}
             <span style={{ color: "#fea611" }}>
-              <strong>Nallagandla, Tellapur Rd</strong>
+              <strong>Kardanur Village, Near ORR Exit 2 & 3, Kollur</strong>
             </span>{" "}
             — Hyderabad’s most promising address for future-forward living.
           </p>
           <hr className="border-gray-500" />
+          <p>RERA: P01100007471</p>
         </div>
 
         {/* RIGHT COLUMN — Contact Form */}
@@ -158,18 +159,28 @@ const Banner = () => {
               className={`w-full p-3 border rounded ${hasSubmitted ? "bg-gray-200 cursor-not-allowed" : "border-gray-300"}`}
             />
             {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
-
+            
             <PhoneInput
-              country="in"
-              disabled={hasSubmitted}
-              value={formData.mobile}
-              onChange={(value) =>
-                !hasSubmitted && setFormData((prev) => ({ ...prev, mobile: value }))
-              }
-              containerClass="w-full"
-              inputClass={`py-4 bg-transparent ${hasSubmitted ? "bg-gray-100 cursor-not-allowed" : ""}`}
-              inputProps={{ name: "mobile", required: true }}
-            />
+  country="in"
+  value={formData.mobile}
+  disabled={hasSubmitted}
+  countryCodeEditable={false}
+  onlyCountries={["in"]}
+  onChange={(value) =>
+    !hasSubmitted &&
+    setFormData((prev) => ({ ...prev, mobile: value }))
+  }
+  containerClass="w-full"
+  inputClass={`!w-full !py-4 !pl-14 !border !border-gray-300 rounded ${
+    hasSubmitted ? "bg-gray-100 cursor-not-allowed" : ""
+  }`}
+  inputProps={{
+    name: "mobile",
+    required: true,
+    autoComplete: "tel",
+  }}
+/>
+
             {errors.mobile && <p className="text-red-500 text-sm">{errors.mobile}</p>}
 
             <div className="flex items-start text-sm">
@@ -182,7 +193,7 @@ const Banner = () => {
                 className="mr-2 mt-1"
               />
               <span>
-                I authorize Tridasa Realty to Call, SMS, Email or WhatsApp me. I also accept T&C and Privacy Policy.
+                I authorize Samarcana Projects to Call, SMS, Email or WhatsApp me. I also accept T&C and Privacy Policy.
               </span>
             </div>
             {errors.agreeTerms && (
@@ -192,7 +203,7 @@ const Banner = () => {
             <button
               type="submit"
               disabled={isSubmitting || hasSubmitted}
-              className={`w-full text-white p-3 rounded text-lg transition bg-gradient-to-r from-[#002954] to-[#fea611] hover:opacity-90 ${
+              className={`w-full text-white p-3 rounded text-lg transition bg-[#fea611] hover:opacity-80 ${
                 hasSubmitted ? "opacity-60 cursor-not-allowed" : ""
               }`}
             >

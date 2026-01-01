@@ -33,15 +33,20 @@ const PricingSection = () => {
 
         {/* 2 BHK */}
         <div className="flex justify-between pt-4 text-left">
-          <p className="text-black">3 BHK</p>
-          <p className="text-black">1733-2358 SFT</p>
-          <p className="text-black">₹1.24 Cr*</p>
+          <p className="text-black">2BHK</p>
+          <p className="text-black">1250 - 1270 SFT</p>
+          <button
+            onClick={openPopup}
+            className="text-white px-2.5 py-1 rounded bg-[#002954] hover:bg-[#fea611] transition"
+          >
+            Request Price
+          </button>
         </div>
 
         {/* 3 BHK – PRICE ON REQUEST BUTTON */}
         <div className="flex justify-between pt-4 text-left">
-          <p className="text-black">4 BHK</p>
-          <p className="text-black">2751 SFT</p>
+          <p className="text-black">3BHK</p>
+          <p className="text-black">1850 - 2000 SFT</p>
           
           <button
             onClick={openPopup}
@@ -62,7 +67,7 @@ const PricingSection = () => {
       <button
         onClick={scrollToBanner}
         className="mt-6 text-white px-6 py-3 rounded shadow blinking-button 
-                transition bg-gradient-to-r from-[#002954] to-[#fea611] hover:opacity-90"
+                transition bg-[#fea611] hover:opacity-70"
       >
         Price Breakup & Payment Plan
       </button>
