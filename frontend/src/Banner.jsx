@@ -74,7 +74,7 @@ const Banner = () => {
 
     try {
       await axios.post(
-        "http://localhost:5000/home/send-email",
+        "https://swathi.get-details.com/home/send-email",
         {
           name: formData.name,
           email: formData.email,
@@ -161,25 +161,25 @@ const Banner = () => {
             {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
             
             <PhoneInput
-  country="in"
-  value={formData.mobile}
-  disabled={hasSubmitted}
-  countryCodeEditable={false}
-  onlyCountries={["in"]}
-  onChange={(value) =>
-    !hasSubmitted &&
-    setFormData((prev) => ({ ...prev, mobile: value }))
-  }
-  containerClass="w-full"
-  inputClass={`!w-full !py-4 !pl-14 !border !border-gray-300 rounded ${
-    hasSubmitted ? "bg-gray-100 cursor-not-allowed" : ""
-  }`}
-  inputProps={{
-    name: "mobile",
-    required: true,
-    autoComplete: "tel",
-  }}
-/>
+            country="in"
+            value={formData.mobile}
+            disabled={hasSubmitted}
+            countryCodeEditable={false}
+            onlyCountries={["in"]}
+            onChange={(value) =>
+              !hasSubmitted &&
+              setFormData((prev) => ({ ...prev, mobile: value }))
+            }
+            containerClass="w-full"
+            inputClass={`!w-full !py-4 !pl-14 !border !border-gray-300 rounded ${
+              hasSubmitted ? "bg-gray-100 cursor-not-allowed" : ""
+            }`}
+            inputProps={{
+              name: "mobile",
+              required: true,
+              autoComplete: "tel",
+            }}
+          />
 
             {errors.mobile && <p className="text-red-500 text-sm">{errors.mobile}</p>}
 
