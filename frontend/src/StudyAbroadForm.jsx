@@ -1,4 +1,4 @@
-import React from "react";
+  import React from "react";
 import logo1 from "./assets/swasthi_banner.png";
 import logo2 from "./assets/swasthi-mobile.png";
 import { MapPin } from "lucide-react";
@@ -6,7 +6,7 @@ import { MapPin } from "lucide-react";
 const StudyAbroadForm = () => {
   return (
     <div className="w-full relative">
-      <div className="md:hidden w-full px-4 py-6">
+      <div className="md:hidden w-full px-2 py-4">
       {/* MOBILE VIEW IMAGE */}
       <div className="md:hidden w-full h-[420px] bg-no-repeat bg-center bg-cover" style={{ backgroundImage: `url(${logo2})` }}></div>
       </div>
